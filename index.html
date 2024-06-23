@@ -15,14 +15,14 @@
                 <p>TRAVEL</p>
             </div>
             <div class="menu">
-                <a href="home.htlm">Home</a>
-            <a href="about.htlm">About us</a>
-            <a href="contact.htlm">Contact Us</a>
+                <a href="index.html" class="active">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact Us</a>
             </div>
             <div class="buscador">
-                <input type="text">
-                <button>Buscar</button>
-                <button>limpiar</button>
+                <input type="text" id="inputDestiny" placeholder="Enter your destiny...">
+                <button id="btnSearch" onclick="findDestiny()">Search</button>
+                <button id="btnClear" onclick="clearResults()">Clear</button>
             </div>
         </nav>
     </header>
@@ -34,9 +34,10 @@
 
             <button class="container__button" id="btn_book">BOOK NOW</button>
         </div>
-        <div class="resultados">
+        <div class="resultados" id="results">
             
         </div>
     </section>
+    <script src="js/travel_recommendation.js"></script>
 </body>
 </html>
